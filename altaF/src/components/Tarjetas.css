@@ -1,0 +1,57 @@
+
+.tarjeta-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tarjeta {
+  width: 200px;
+  height: auto; 
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #3333;
+  background-color: #d1bc8a;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column; 
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta-image {
+  width: 120px; 
+  height: 120px; 
+  margin-right: 30px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.tarjeta-image img {
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain;
+}
+
+
+.tarjeta-content {
+  display: flex;
+  flex-direction: column; 
+  padding: 10px 0;
+}
+
+.tarjeta-title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: black;
+}
+
+.tarjeta-precio {
+  font-size: 1rem;
+  color: black;
+  margin: 0;
+  margin-top: 5px; 
+}

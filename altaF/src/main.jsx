@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import productos from './datos/productos.js'
 import VistaProducto from './vista/VistaProducto.jsx'
 import Perfil from './components/Perfil.jsx'
@@ -44,6 +44,8 @@ const router = createBrowserRouter(routes);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+   <BrowserRouter>
+   </BrowserRouter>
     <RouterProvider router={router} />
   </React.StrictMode>,
 )

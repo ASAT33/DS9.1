@@ -1,0 +1,58 @@
+/* ContactForm.css */
+
+/* Contenedor para centrar el formulario */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Contenedor del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Estilos para cada div que envuelve un campo */
+form > div {
+  margin-bottom: 15px;
+}
+
+/* Estilos para las etiquetas */
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Estilos para el botón */
+form button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilos para el botón en hover */
+form button:hover {
+  background-color: #0056b3;
+}

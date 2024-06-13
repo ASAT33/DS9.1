@@ -60,7 +60,7 @@ const ContactForm = ({ fetchContacts, currentContact, setCurrentContact }) => {
         <label>Telefono</label>
         <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} required />
       </div>
-      <button type="submit">{currentContact ? 'Update Contact' : 'Add Contact'}</button>
+      <button type="submit">{currentContact ? 'Actualizar contacto' : 'Añadir contacto'}</button>
     </form>
   );
 };

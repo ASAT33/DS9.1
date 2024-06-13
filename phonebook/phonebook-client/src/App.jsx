@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ContactForm from './components/ContactForm';
 import ContactList from './components/ContactList';
 import { fetchContacts } from './servicios/contactService';
+import './App.css'
 const App = () => {
  const [contacts, setContacts] = useState([]);
  const [currentContact, setCurrentContact] = useState(null);
@@ -15,7 +16,9 @@ const App = () => {
  getContacts();
  }, []);
  return (
+    
  <div>
+    <div> <img className="logo" src="src\assets\Agro-Fast_plain.svg"></img></div>
  <h1>Agro-fast Phonebook</h1>
  <ContactForm fetchContacts={getContacts}
 currentContact={currentContact} setCurrentContact={setCurrentContact}

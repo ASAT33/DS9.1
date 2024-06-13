@@ -1,58 +1,42 @@
-/* ContactForm.css */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
 
-/* Contenedor para centrar el formulario */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Altura completa de la ventana */
+  text-align: center;
 }
 
-/* Contenedor del formulario */
-form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+  
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-/* Estilos para cada div que envuelve un campo */
-form > div {
-  margin-bottom: 15px;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-/* Estilos para las etiquetas */
-form label {
-  margin-bottom: 5px;
-  font-weight: bold;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-/* Estilos para los campos de entrada */
-form input[type="text"],
-form input[type="number"] {
-  width: 100%;
-  padding: 8px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+.card {
+  padding: 2em;
 }
 
-/* Estilos para el botón */
-form button {
-  padding: 10px 15px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-/* Estilos para el botón en hover */
-form button:hover {
-  background-color: #0056b3;
+.read-the-docs {
+  color: #888;
 }
